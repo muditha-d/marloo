@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marloo Solutions - Indigenous Business Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <!-- Cultural Sensitivity Modal -->
+    <div id="culturalModal" class="modal hidden">
+        <div class="modal-content">
+
+            <h3>WARNING: Cultural Acknowledgment</h3>
+            <h4>Deceased Personst</h4>
+            <p1>Aboriginal and Torres Strait Islander people should be aware that this website may contain images, voices and names of deceased persons.</p1>
+            <p1>In some Aboriginal and Torres Strait Islander communities, hearing recordings, seeing images or the names of deceased persons may cause sadness or distress and in some cases, offend against strongly held cultural prohibitions.</p1>
+            <p></p>
+            <h4>Language</h4>
+            <p1>Some material on this website may contain words, descriptions and terms which may be culturally sensitive and that reflect authors’ views, or those of the period in which the content was created, but may not be considered appropriate today. Terms and annotations which reflect the creator's attitude or that of the period in which the item was written may be considered inappropriate today in some circumstances.</p1>
+            <p1>These views are not necessarily the views of Marloo Solutions. While the information may not reflect current understanding, it is provided in a historical context.</p1>
+            <p></p>
+
+            <button id="continueBtn" class="btn-primary">Continue with Respect</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <header class="header">
+    <div class="container">
+        <div class="logo">
+        <img src="images/logo.png" alt="Marloo Logo" class="logo-img" />
+        <div class="logo-text">
+            <h1>Marloo Solutions</h1>
+            <div class="tagline">Indigenous Business Excellence</div>
+        </div>
+        </div>
+
+        <div class="mobile-menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+
+        <nav class="nav" id="mainNav">
+        <ul>
+            <li>
+            <a href="#home" class="active">
+                <i class="fas fa-house home-icon"></i>
+            </a>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+
+    <section class="intro">
+        <!-- ADDED: Background slideshow container -->
+        <div class="intro-bg">
+            <div class="bg-image"></div>
+        </div>
+        
+        <!-- EXISTING: Container and content (unchanged) -->
+        <div class="container">
+            <div class="intro-content">
+                <h2>Marloo Solutions</h2>
+                <p class="intro-text">
+                    We are a leading Indigenous business consultancy and adept services provider dedicated to fostering sustainable growth and cultural preservation. Our comprehensive approach combines traditional wisdom with modern business acumen to create meaningful impact across communities and industries.
+                </p>
+            </div>
+        </div>
+        
+        <!-- ADDED: Optional slideshow indicators -->
+        <div class="slideshow-indicators">
+            <div class="indicator active" data-slide="0"></div>
+            <div class="indicator" data-slide="1"></div>
+            <div class="indicator" data-slide="2"></div>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container"> 
+            <!-- Our Story Section -->
+            <div class="content-section">
+                <div class="bio-section">
+                    <div class="bio-image">
+                        <img src="images/incarnation.jpg" alt="Traditional land management" style="width: 100%; max-width: 400px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    </div>
+                    <div>
+                        <h2>THE INCARNATION</h2>
+                        
+                        <p>Founded in 2011, Marloo is now a dynamic and multi-disciplined 100% indigenous owned business. It is solely committed to humanity for others. Our management team is focused on developing and procuring employment opportunities to create and enhance career pathways for indigenous and marginalised members of our community, whilst ensuring high quality value for money results.</p>
+                        
+                        <p>At the heart of this vision is founder Stan “Yarra” Yarramanua - a proud Wemba Wemba man, internationally recognized artist, musician, actor, social worker, entrepreneur and above all, a tireless community advocate. </p>
+                        
+                        <p>Marloo Solutions was established with a clear purpose: to create long-term, sustainable employment pathways for Aboriginal and Torres Strait Islander people across Australia. Proudly 100% Indigenous-owned and operated, our leadership brings more than 90 years of combined experience in delivering real, community-driven outcomes through culturally grounded employment initiatives.</p>
+                        
+                        <p>Since our formation in 2011, we've reinvested all profits directly back into the organisation to strengthen our mission. Each solution we deliver is personalised, supporting individuals in finding meaningful employment suited to their skills and aspirations. As a values-led and ethical employer, we take pride in consistently delivering high-quality, cost-effective services for our clients — while maintaining a deep commitment to our communities.</p>
+                        
+                        <p>We exist to create genuine Indigenous impact. Our goal is to grow Indigenous wealth, capability, wellbeing and employment across the country through grassroots engagement, education, and support — ensuring long-lasting, life-changing results.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="acknowledgement">
+                    <p style="color: #ffffff">Marloo Solutions acknowledges all Aboriginal and Torres Strait Islander Traditional Custodians of Country and recognises their continuing connection to land, sea, culture and community. We pay our respects to Elders past, present and emerging.</p>
+                </div>
+                <div class="copyright">
+                    <p style="color: #ffffff">&copy; 2025 Marloo Solutions. All rights reserved. | Cultural integrity in every solution.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
