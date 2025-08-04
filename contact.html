@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Marloo Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <header class="header">
+    <div class="container">
+        <div class="logo">
+        <img src="images/logo.png" alt="Marloo Logo" class="logo-img" />
+        <div class="logo-text">
+            <h1>Marloo Solutions</h1>
+            <div class="tagline">Indigenous Business Excellence</div>
+        </div>
+        </div>
+
+        <div class="mobile-menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+
+        <nav class="nav" id="mainNav">
+        <ul>
+            <li>
+            <a href="index.html" >
+                <i class="fas fa-house home-icon"></i>
+            </a>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+
+    <!-- Services Introduction -->
+    <section class="intro" style="background: url('images/intro-bg8.jpg') no-repeat center center; background-size: cover;">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Get in Touch</h2>
+                <p class="intro-text">We welcome your inquiries and look forward to discussing how we can support your goals with cultural integrity and professional excellence.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Contact Methods -->
+            <div class="content-section">
+                <h2>Connect With Us</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>Email Us</h3>
+                        <p>For general inquiries and business opportunities.</p>
+                        <p><strong>info@marloosolutions.org.au</strong></p>
+                    </div>
+                    <div class="card">
+                        <h3>Call Us</h3>
+                        <p>Speak directly with our team for immediate assistance.</p>
+                        <p><strong>(03) 1234 5678</strong></p>
+                    </div>
+                    <div class="card">
+                        <h3>Visit Us</h3>
+                        <p>Our Melbourne office welcomes visitors by appointment.</p>
+                        <p><strong>123 Marloo Street<br>Melbourne, VIC 3000</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="content-section">
+                <div class="grid-2">
+                    <div>
+                        <h2>Send Us a Message</h2>
+                        <p>Whether you're interested in our services, seeking a partnership, or have questions about Indigenous business practices, we're here to help. Please provide as much detail as possible so we can respond appropriately.</p>
+                        
+                        <div class="acknowledgement" style="margin-top: 2rem;">
+                            <p>We approach all communications with respect for cultural protocols and understand the importance of relationship-building in Indigenous business practices.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card">
+                            <form action="https://formspree.io/f/moqgjqgb" method="POST">
+                                <div class="form-group">
+                                    <label for="name">Your Name *</label>
+                                    <input type="text" name="name" id="name" required placeholder="Enter your full name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Your Email *</label>
+                                    <input type="email" name="_replyto" id="email" required placeholder="Enter your email address">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number (optional)">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="organization">Organization</label>
+                                    <input type="text" name="organization" id="organization" placeholder="Your company or organization (optional)">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="service">Service Interest</label>
+                                    <select name="service" id="service">
+                                        <option value="">Select a service area (optional)</option>
+                                        <option value="security">Security Services</option>
+                                        <option value="cleaning">Cleaning Services</option>
+                                        <option value="waste">Waste Management</option>
+                                        <option value="sports">Sports & Recreation</option>
+                                        <option value="landscaping">Landscaping Services</option>
+                                        <option value="utilities">Utilities Management</option>
+                                        <option value="construction">Construction Services</option>
+                                        <option value="fire">Fire Safety Services</option>
+                                        <option value="advisory">Advisory Services</option>
+                                        <option value="project">Project Management</option>
+                                        <option value="labour">Labour Hire</option>
+                                        <option value="electrical">Electrical Services</option>
+                                        <option value="pool">Pool Services</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Your Message *</label>
+                                    <textarea name="message" id="message" rows="6" required placeholder="Please provide details about your inquiry, project requirements, or how we can assist you..."></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>
+                                        <input type="checkbox" name="newsletter" value="yes" style="margin-right: 0.5rem;">
+                                        I would like to receive updates about Marloo Solutions services and community initiatives
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn-cta" style="width: 100%;">Send Message</button>
+                                
+                                <p style="font-size: 0.9rem; color: #666; margin-top: 1rem; text-align: center;">
+                                    <small>We value your privacy. Information provided is used solely for communication purposes and will be handled in accordance with our privacy policy.</small>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Office Information -->
+            <div class="content-section">
+                <h2>Our Locations</h2>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>Our Presence</h3>
+                        <p>Marloo Solutions is established across the Melbourne metropolitan area and key regional centres in Victoria,</p>
+                        <ul style="text-align: left; padding-left: 1rem; margin-top: 1rem;">
+                            <li>Sale</li>
+                        </ul>
+                        <p style="margin-top: 1rem;">Expansion works are currently underway throughout Victoria and into other states, including New South Wales, South Australia, and Queensland.</p>
+                        <p>We are confident that the strength and success of our services will soon see Marloo Solutions operating across all of this great southern land we know as Australia.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Did You Know?</h3>
+                        <p><strong>Trivia:</strong><br>
+                        The name <em>Australia</em> derives from the Latin word <em>‘australis’</em>, meaning “southern.” It dates back to 2nd century legends of an “unknown southern land” known as <em>Terra Australis Incognita</em>.</p>
+                        <p>Explorer Matthew Flinders later named the continent Terra Australis, which was eventually abbreviated to the name we know today—Australia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="acknowledgement">
+                    <p style="color: #ffffff">Marloo Solutions acknowledges all Aboriginal and Torres Strait Islander Traditional Custodians of Country and recognises their continuing connection to land, sea, culture and community. We pay our respects to Elders past, present and emerging.</p>
+                </div>
+                <div class="copyright">
+                    <p style="color: #ffffff">&copy; 2025 Marloo Solutions. All rights reserved. | Cultural integrity in every solution.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
